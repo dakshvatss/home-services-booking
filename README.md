@@ -262,7 +262,7 @@ This project is created for educational purposes as a take-home assignment.
 ## 👤 Author
 
 Your Name
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@yourusername](https://github.com/dakshvatss)
 
 ## 🙏 Acknowledgments
 
