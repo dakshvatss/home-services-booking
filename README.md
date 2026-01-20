@@ -255,14 +255,9 @@ If this were a production system:
 - Add input validation & sanitization
 - Deploy to cloud (AWS/Vercel)
 
-## 📄 License
 
-This project is created for educational purposes as a take-home assignment.
 
-## 👤 Author
 
-Your Name
-- GitHub: [@yourusername](https://github.com/dakshvatss)
 
 ## 🙏 Acknowledgments
 
