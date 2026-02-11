@@ -366,6 +366,19 @@ app.get('/', (req, res) => {
   `);
 });
 
+// Simple GitHub webhook receiver
+app.post('/webhook', (req, res) => {
+  try {
+    const ghEvent = req.headers['x-github-event'] || 'unknown';
+    console.log(`\n[webhook] event=${ghEvent}`);
+    console.log('[webhook] headers:', JSON.stringify(req.headers));
+    console.log('[webhook] body:', JSON.stringify(req.body));
+    res.status(200).send('ok');
+  } catch (err) {
+    console.error('Webhook handler error:', err);
+    res.status(500).send('error');
+  }
+});
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
